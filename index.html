@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Rubik's Cube Academy India</title>
+<title>Cube Academy</title>
 <meta name="description" content="Live online cube coaching for kids, by Guinness World Record holder Divya. One new cube a month, a level your child unlocks and keeps.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -246,6 +246,28 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
 .js-reveal .split.in .w{opacity:1; transform:none}
 @media (max-width:860px){ .cube,.shadow{--s:min(210px,54vw)} }
 @media (max-width:560px){ .hdr .btn .long{display:none} .hdr .btn .short{display:inline} .wa{padding:13px} .wa .wa-t{display:none} .hdr-in{gap:12px} .brand b{font-size:15px} }
+
+/* Outcome */
+.outcome .pain-list li::before{background:var(--green)}
+/* Mid CTA on dark */
+.how .hero-ctas{margin-top:40px}
+.how .btn-primary{background:var(--yellow); color:#1A1400}
+.how .btn-primary:hover{background:#fff; color:#1A1400}
+.how .btn-ghost{background:transparent; color:var(--paper); border-color:color-mix(in srgb,var(--paper) 30%,transparent)}
+.how .btn-ghost:hover{border-color:var(--paper)}
+/* Scholarship: value stack + steps */
+.sch-grid{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px; align-items:start}
+.stack{list-style:none; margin:0; padding:0; border:1px solid var(--line); border-radius:var(--r-lg); background:var(--panel); overflow:hidden}
+.stack li{display:grid; grid-template-columns:auto minmax(0,1fr); gap:16px; padding:18px 22px; border-bottom:1px solid var(--line)}
+.stack li::before{content:""; width:14px; height:14px; margin-top:6px; border-radius:4px; background:var(--c,var(--blue))}
+.stack b{display:block; font-size:18px}
+.stack span{display:block; margin-top:2px; color:var(--muted); font-size:16px}
+.stack .total{display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 24px; background:var(--tint-yellow); border-bottom:0; font-family:var(--f-display); font-weight:800; font-size:19px}
+.stack .total::before{display:none}
+.stack .total s{color:var(--muted); font-weight:700; text-decoration-thickness:2px}
+.steps-title{margin-top:72px; font-size:clamp(26px,3.2vw,38px)}
+.wk .num{font-family:var(--f-display); font-weight:850; font-size:15px; color:var(--muted); display:block; margin-bottom:6px}
+@media (max-width:860px){ .sch-grid{grid-template-columns:minmax(0,1fr); gap:28px} }
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   .cube{animation:none}
@@ -256,12 +278,12 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
 
 <header class="hdr" id="hdr">
   <div class="wrap hdr-in">
-    <a class="brand" href="#top" aria-label="Rubik's Cube Academy India, back to top">
+    <a class="brand" href="#top" aria-label="Cube Academy, back to top">
       <span class="mark" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--white)"></i><i style="background:var(--blue)"></i><i style="background:var(--yellow)"></i><i style="background:var(--green)"></i><i style="background:var(--orange)"></i><i style="background:var(--blue)"></i><i style="background:var(--red)"></i><i style="background:var(--yellow)"></i></span>
-      <b>Rubik's Cube Academy India<span>Live coaching by Guinness World Record holder Divya</span></b>
+      <b>Cube Academy<span>Live coaching by Guinness World Record holder Divya</span></b>
     </a>
     <nav class="nav" aria-label="Sections">
-      <a href="#journey">The journey</a><a href="#results">Results</a><a href="#divya">Meet Divya</a><a href="#faq">Questions</a>
+      <a href="#journey">The journey</a><a href="#results">Results</a><a href="#divya">Meet Divya</a><a href="#scholarship">Scholarship</a><a href="#faq">Questions</a>
     </nav>
     <a class="btn btn-primary" href="https://tally.so/r/EkjDzq"><span class="short">Apply</span><span class="long">Apply for the scholarship</span></a>
   </div>
@@ -336,6 +358,25 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
     </div>
   </section>
 
+  <!-- OUTCOME -->
+  <section class="outcome" id="after">
+    <div class="wrap pain-grid">
+      <div>
+        <h2>Now picture six months from now.</h2>
+        <p class="lead" style="margin-top:20px">It doesn't happen overnight. It happens one level at a time. This is what parents tell us they start to see.</p>
+      </div>
+      <div>
+        <ul class="pain-list">
+          <li>After school, they reach for the cube before the phone.</li>
+          <li>They sit with one hard problem for twenty minutes, and enjoy it.</li>
+          <li>A row of small cube trophies sits on their shelf, every one of them earned.</li>
+          <li>When guests come over, they ask someone to scramble it so they can show off.</li>
+        </ul>
+        <p class="pain-close"><b>That's what a child who has found their own thing looks like.</b></p>
+      </div>
+    </div>
+  </section>
+
   <!-- JOURNEY -->
   <section id="journey">
     <div class="wrap">
@@ -377,6 +418,10 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
           <p>A reason to get faster, and a moment to show friends what they've mastered.</p>
           <ul><li>Cube Clash, our monthly friendly competition</li><li>Real competitions when they're ready</li><li>A weekly progress note for parents</li></ul>
         </div>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://tally.so/r/EkjDzq">Apply for the scholarship</a>
+        <a class="btn btn-ghost" href="#scholarship">See what the winner gets</a>
       </div>
     </div>
   </section>
@@ -460,19 +505,56 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
     </div>
   </section>
 
+  <!-- SCHOLARSHIP -->
+  <section id="scholarship" style="padding-top:0">
+    <div class="wrap">
+      <div class="sch-grid">
+        <div>
+          <h2>What the winner gets.</h2>
+          <p class="lead" style="margin-top:20px">One child gets a full year of everything here, free. Divya looks for a curious child, a parent who'll help with 15 minutes a day, and a real reason to start now.</p>
+        </div>
+        <ul class="stack">
+          <li style="--c:var(--blue)"><div><b>12 months of live coaching</b><span>2–3 small-batch Zoom classes a week with Divya</span></div></li>
+          <li style="--c:var(--yellow)"><div><b>The 12-level roadmap</b><span>A clear next cube every month, planned for your child</span></div></li>
+          <li style="--c:var(--orange)"><div><b>Cubes sent to your door</b><span>So they can start solving from the first class</span></div></li>
+          <li style="--c:var(--red)"><div><b>A cube-shaped trophy for every level</b><span>Something they can hold, keep and show</span></div></li>
+          <li style="--c:var(--green)"><div><b>Cube Clash every month</b><span>A friendly competition that gives them a reason to get faster</span></div></li>
+          <li style="--c:var(--blue)"><div><b>Help within the hour</b><span>Doubts answered on WhatsApp, so they're never stuck for long</span></div></li>
+          <li style="--c:var(--yellow)"><div><b>A weekly note for you</b><span>What they learned and what's next</span></div></li>
+          <li style="--c:var(--green)"><div><b>Our promise</b><span>If they do the work, Divya coaches them free until it clicks</span></div></li>
+          <li class="total"><span>Worth over ₹1,00,000</span><span>For the winner: free</span></li>
+        </ul>
+      </div>
+
+      <h3 class="steps-title">How the scholarship works.</h3>
+      <div class="week-grid">
+        <div class="wk" style="--c:var(--blue)"><span class="num">STEP 1</span><h3>Apply in 3 minutes</h3><p>Tell us about your child, and why now.</p></div>
+        <div class="wk" style="--c:var(--yellow)"><span class="num">STEP 2</span><h3>Divya reads every entry</h3><p>Every form is read by Divya herself, not a team.</p></div>
+        <div class="wk" style="--c:var(--green)"><span class="num">STEP 3</span><h3>The winner is announced</h3><p>Live in our WhatsApp group, with the family's permission.</p></div>
+        <div class="wk" style="--c:var(--orange)"><span class="num">STEP 4</span><h3>Every family gets something</h3><p>Not picked? You still get a partial scholarship toward your child's program.</p></div>
+      </div>
+      <div class="hero-ctas" style="margin-top:40px">
+        <a class="btn btn-primary" href="https://tally.so/r/EkjDzq">Apply for the scholarship</a>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section id="faq" style="padding-top:0">
     <div class="wrap faq-grid">
       <div><h2>Questions parents ask.</h2></div>
       <div>
-        <details><summary>Isn't a Rubik's cube just a toy?</summary><div class="ans">It looks like one. To solve it, a child memorises patterns, plans moves ahead and holds their focus for minutes at a time, which is exactly what homework asks of them. That's why parents notice the change outside cubing too.</div></details>
+        <details><summary>Isn't a cube just a toy?</summary><div class="ans">It looks like one. To solve it, a child memorises patterns, plans moves ahead and holds their focus for minutes at a time, which is exactly what homework asks of them. That's why parents notice the change outside cubing too.</div></details>
         <details><summary>My child isn't a maths kid. Will this work?</summary><div class="ans">You don't need to be good at maths. Every cube is broken into small steps, and a coach walks them through each one. Most children get their first solve in the first week or two.</div></details>
         <details><summary>What age is this for?</summary><div class="ans">Divya coaches children from [age] upwards. Batches are grouped by level, so younger kids never feel behind.</div></details>
         <details><summary>Won't an online class mean more screen time?</summary><div class="ans">Scrolling is hours of switching every few seconds. Our class is one hour of the opposite: hands on a cube, eyes on one problem, with a coach watching. Many parents find the cube starts replacing the phone in free time.</div></details>
         <details><summary>My child starts things and drops them. Why would this be different?</summary><div class="ans">Kids drop things when there's no next level. Here there's a new cube, a new trophy and a Cube Clash every month, and our promise means we don't let go if they're doing the work.</div></details>
+        <details><summary>We're already busy with school and tuition. Is there time?</summary><div class="ans">It's about three hours a week, and most of it comes out of phone time, not study time. Batches run on fixed days each week, so you can plan around school, and the daily practice is just 15 minutes.</div></details>
+        <details><summary>My child is shy. Will they cope in a live class?</summary><div class="ans">Batches are small, 5 to 8 kids at the same level, and nobody is put on the spot. Divya watches their hands and helps quietly. Shy kids often open up once they have a solve to show.</div></details>
+        <details><summary>How do I know this is real?</summary><div class="ans">Divya holds a Guinness World Record, has coached kids for nine years, and her students have competed at the Asia Cup. Watch Atharv's story above, or message us on WhatsApp and talk to Divya before you apply.</div></details>
         <details><summary>Can't they just learn from YouTube for free?</summary><div class="ans">They can try. But YouTube lives on the same phone we're trying to get them off, there's no roadmap, and nobody helps when they're stuck. Most kids stop at the first layer.</div></details>
         <details><summary>What do we need at home?</summary><div class="ans">A laptop, tablet or phone with Zoom, and a quiet spot for an hour. We send the first cube to your door.</div></details>
-        <details><summary>How much does it cost?</summary><div class="ans">Programs run from 3 to 12 months. On a short call we'll look at where your child is today and where you'd love them to be, and recommend the right one. During a scholarship season, every family who applies gets something.</div></details>
+        <details><summary>How much does it cost?</summary><div class="ans">Programs run from 3 to 12 months. On a short call we'll look at where your child is today and where you'd love them to be, and recommend the right one. During a scholarship season, every family who applies gets a partial scholarship.</div></details>
       </div>
     </div>
   </section>
@@ -483,7 +565,7 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
     <div class="wrap final-grid">
       <div>
         <h2>One child gets a full year, free.</h2>
-        <p class="lead">This season Divya is giving one child a full year of live coaching, worth over ₹1,00,000. It takes three minutes to apply, and every family who enters gets something.</p>
+        <p class="lead">This season Divya is giving one child a full year of live coaching, worth over ₹1,00,000. It takes three minutes to apply, and every family who enters gets a partial scholarship.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="https://tally.so/r/EkjDzq">Apply for the scholarship</a>
           <a class="btn btn-ghost" href="https://wa.me/910000000000">Ask a question on WhatsApp</a>
@@ -505,7 +587,7 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
 
 <footer>
   <div class="wrap foot">
-    <span>© Rubik's Cube Academy India. Live online cube coaching for kids.</span>
+    <span>© Cube Academy. Live online cube coaching for kids.</span>
     <nav aria-label="Footer"><a href="#journey">The journey</a><a href="#results">Results</a><a href="#faq">Questions</a><a href="https://wa.me/910000000000">WhatsApp</a><a href="#">Instagram</a></nav>
   </div>
 </footer>
@@ -531,7 +613,7 @@ footer{padding-block:40px 120px; color:var(--muted); font-size:15px}
       h.innerHTML = words.map(function(w,i){ return '<span class="w" aria-hidden="true" style="--i:'+i+'">'+w+'</span>' }).join(" ");
       h.classList.add("split");
     });
-    var groups = [".lead",".pain-list li",".pain-close",".lvl",".lvl-detail",".pillar",".portrait",".fact",".results-top > *",".rating",".wall > *",".wk",".promise-box","details",".count",".count-note",".vsl-wrap",".trust",".hero-ctas",".pill"];
+    var groups = [".lead",".pain-list li",".pain-close",".lvl",".lvl-detail",".pillar",".portrait",".fact",".results-top > *",".rating",".wall > *",".wk",".promise-box",".stack li","details",".count",".count-note",".vsl-wrap",".trust",".hero-ctas",".pill"];
     groups.forEach(function(sel){
       var els = document.querySelectorAll(sel);
       els.forEach(function(el,i){ el.classList.add("rv"); el.style.setProperty("--i", sel === ".lead" || sel === "details" ? 0 : i % 6) });
